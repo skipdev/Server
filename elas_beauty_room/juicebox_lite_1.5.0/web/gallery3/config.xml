@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery
+	galleryTitle="Pedicures"
+>
+  <image imageURL="images/main.jpg"
+		thumbURL="thumbs/main.jpg"
+		linkURL="images/main.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+
+  <image imageURL="images/1.jpg"
+		thumbURL="thumbs/1.jpg"
+		linkURL="images/1.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+
+  <image imageURL="images/2.jpg"
+		thumbURL="thumbs/2.jpg"
+		linkURL="images/2.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+
+  <image imageURL="images/3.jpg"
+		thumbURL="thumbs/3.jpg"
+		linkURL="images/3.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+  
+</juiceboxgallery>

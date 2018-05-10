@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery
+	galleryTitle="Nail Designs"
+>
+  <image imageURL="images/o3.jpg"
+		thumbURL="thumbs/o3.jpg"
+		linkURL="images/o3.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+
+  <image imageURL="images/o2.jpg"
+		thumbURL="thumbs/o2.jpg"
+		linkURL="images/o2.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+
+  <image imageURL="images/o4.jpg"
+		thumbURL="thumbs/o4.jpg"
+		linkURL="images/o4.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+
+  <image imageURL="images/o1.jpg"
+		thumbURL="thumbs/o1.jpg"
+		linkURL="images/o1.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+  <image imageURL="images/main.jpg"
+		thumbURL="thumbs/main.jpg"
+		linkURL="images/main.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+
+  <image imageURL="images/1.jpg"
+		thumbURL="thumbs/1.jpg"
+		linkURL="images/1.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+
+  <image imageURL="images/2.jpg"
+		thumbURL="thumbs/2.jpg"
+		linkURL="images/2.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+
+  <image imageURL="images/3.jpg"
+		thumbURL="thumbs/3.jpg"
+		linkURL="images/3.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+
+  <image imageURL="images/4.jpg"
+		thumbURL="thumbs/4.jpg"
+		linkURL="images/4.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+  
+  <image imageURL="images/5.jpg"
+		thumbURL="thumbs/5.jpg"
+		linkURL="images/5.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+  
+  <image imageURL="images/6.jpg"
+		thumbURL="thumbs/6.jpg"
+		linkURL="images/6.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+  
+  <image imageURL="images/7.jpg"
+		thumbURL="thumbs/7.jpg"
+		linkURL="images/7.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+  
+  <image imageURL="images/8.jpg"
+		thumbURL="thumbs/8.jpg"
+		linkURL="images/8.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+  
+  <image imageURL="images/9.jpg"
+		thumbURL="thumbs/9.jpg"
+		linkURL="images/9.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+  
+  <image imageURL="images/10.jpg"
+		thumbURL="thumbs/10.jpg"
+		linkURL="images/10.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+  
+  <image imageURL="images/11.jpg"
+		thumbURL="thumbs/11.jpg"
+		linkURL="images/11.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+  
+  <image imageURL="images/12.jpg"
+		thumbURL="thumbs/12.jpg"
+		linkURL="images/12.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+  
+  <image imageURL="images/13.jpg"
+		thumbURL="thumbs/13.jpg"
+		linkURL="images/13.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+  
+  <image imageURL="images/14.jpg"
+		thumbURL="thumbs/14.jpg"
+		linkURL="images/14.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+  
+  <image imageURL="images/15.jpg"
+		thumbURL="thumbs/15.jpg"
+		linkURL="images/15.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+  
+</juiceboxgallery>
