@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery
+	galleryTitle="Extras"
+>
+  <image imageURL="images/main.jpg"
+		thumbURL="thumbs/main.jpg"
+		linkURL="images/main.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+
+  <image imageURL="images/1.jpg"
+		thumbURL="thumbs/1.jpg"
+		linkURL="images/1.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+
+  <image imageURL="images/2.jpg"
+		thumbURL="thumbs/2.jpg"
+		linkURL="images/2.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+
+  <image imageURL="images/3.jpg"
+		thumbURL="thumbs/3.jpg"
+		linkURL="images/3.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+
+  <image imageURL="images/4.jpg"
+		thumbURL="thumbs/4.jpg"
+		linkURL="images/4.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+  
+  <image imageURL="images/5.jpg"
+		thumbURL="thumbs/5.jpg"
+		linkURL="images/5.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+  
+  <image imageURL="images/6.jpg"
+		thumbURL="thumbs/6.jpg"
+		linkURL="images/6.jpg"
+		linkTarget="_blank">
+		<title></title>
+		<caption></caption>
+  </image>
+  
+</juiceboxgallery>
