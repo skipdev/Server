@@ -1,12 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>StephyX Dev</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <title>Resume</title>
 </head>
+
 <body>
-  <a href="elas_beauty_room">Welcome! To get to Ela's beauty room please click here</a>
+    
+    <wrapper>
+        <div class="sidebar">
+          <img src="https://pbs.twimg.com/profile_images/962849937305292800/CyMGu_4C_400x400.jpg">
+          <p><b>Stephanie Barden</b></p>
+          <br>
+          <hr>
+          <nav class="menu">
+            <a href="index.html#about">About</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="index.html#work_exp">Websites</a>
+            <!--<a href="index.html#edu">Education</a>
+            <a href="index.html#awards">Awards</a>-->
+            
+          </nav>
+          <ul>
+            <li><a href="https://www.twitter.com/ST3PHx_x"><i class="fab fa-twitter fa-2x"></i></a></li>
+    			  <li><a href="https://github.com/stephyx/"><i class="fab fa-github fa-2x"></i></a></li>
+    			  <li><a href="https://www.behance.net/stephyx"><i class="fab fa-behance fa-2x"></i></a></li>
+    			  <li><a href="https://frozenfanta.deviantart.com/"><i class="fab fa-deviantart fa-2x"></i></a></li>
+          </ul>
+        </div> <!-- end sidebar -->
+        
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          
+          <script>
+          var move = 0;
+              
+          function myFunction(x) {
+              x.classList.toggle("change");
+              
+              if (move == 0) {
+                $('.sidebar').css({ 'left': '40%' });
+                move = 1;
+              }
+              else if (move == 1) {
+                $('.sidebar').css({ 'left': '-40%' });
+                move = 0;
+              }
+          }
+          </script>
+          
+        <div class="main">
+            <div id="top">
+              <h2>Stephanie Barden</h2>
+              <p>Residing in Southampton <br>
+                & Eastbourne <br>
+                <br>
+                07710486789
+                <br>
+                stephyx.web@gmail.com
+              </p>
+            </div> <!-- end top -->
+          <br>
+              <div id="about">
+                  <p class="title">About me</p>
+                  <p>An ambitious Full-stack Web Developer bringing a broad skill range in both front and back-end website development, as well as a passion for collateral design and brand development. </p>
+              </div> <!-- end about -->
+              <br>
+              <hr>
+              <br>
+              <div id="skills">
+                <p class="title">Skills</p>
+                I currently have experience in:
+                <br>
+                <div id = "skill_list">
+                  <ul id="first_ul">
+                      <li>HTML/CSS</li>
+                      <li>Python</li>
+                      <li>PHP</li>
+                      <li>MYSQL/Oracle</li>
+                      <li>Javascript</li>
+                      <br>
+                  </ul>
+                  <ul id="second_ul">
+                      <li>Logo Design</li>
+                      <li>Brand Development</li>
+                      <li>Front-end Design</li>
+                      <li>Collateral Design</li>
+                      <li>Design Sprints</li>
+                      <br>
+                  </ul>
+                </div>
+                <div id="click_here">
+                  <p>Click <a href="https://github.com/stephyx/">here</a> for coding portfolio</p>
+                  <p>Click <a href="https://www.behance.net/stephyx">here</a> for design portfolio</p>
+                  <p>Click <a href="https://frozenfanta.deviantart.com/">here</a> for general art and drawings</p>
+                </div> <!-- end click_here -->
+              </div> <!-- end skills -->
+              
+              <hr>
+              <br>
+              
+              <div id="work_exp">
+                  <p class="title">Previous Websites</p>
+                  <ul>
+                      <li>
+                          <p class="title2">Aber Landscaping - <i>May 2018</i></p>
+                          <p class="date">My first proper client website. My skills in front-end development had greatly improved since my college project, and I now did not have to use any templates. CSS Grid was used for the layout.</p>
+                          <p>Click <a href="aber_landscaping">here</a> to preview</p>
+                          
+                      </li>
+                      <br>
+                      <li>
+                          <p class="title2">Solent Pizzas - <i>April 2018</i></p>
+                          <p class="date">Created for a university assignment. Focus was more on the Javascript validation and order form, so design is lacking in this one.</p>
+                          <p>Click <a href="solent_pizzas">here</a> to preview</p>
+                          
+                      </li>
+                      <br>
+                      <li>
+                          <p class="title2">Ela's Beauty Room - <i>April 2017</i></p>
+                          <p class="date">My end of year project for college. Allows users to book appointments for Ela's beauty salon, which will then be emailed to her. Used a template called Arcana by HTML5 UP.</p>
+                          <p>Click <a href="elas_beauty_room">here</a> to preview</p>
+                      </li>
+                  </ul>
+              </div> <!-- end work_exp -->
+              
+              <br>
+              <hr>
+              <h1 id="more">More Coming Soon!</h1>
+              <br>
+              
+              <!--<div id="edu">
+                <p class="title">Education</p>
+                  <p class="title2">Southampton Solent University, Southampton <i> - Higher Education</i></p>
+                  <p class="date">September 2017 - Present</p>
+                  <p>Bachelor of Science (Hons): Web Design and Development</p>
+                  <!--<p><i><ul style= list-style: none;><li>Currently part of the Web Design & Development Society</li></ul></i></p>
+                <hr>
+                  <p class="title2">Sussex Downs College, Lewes <i>- Further Education</i></p>
+                  <p class="date">September 2015 - June 2017</p>
+                  <ul>
+                    <li>Software Development (BTEC L3 Extended Diploma) - Distinction *</li>
+                    <li>Computer Science (A-Level) - D</li>
+                    <li>Mathematics (AS) - C</li>
+                    <li>Biology (A-Level) - C</li>
+                  </ul>
+                <hr>
+                  <p class="title2">The Bishop Bell C of E School, Eastbourne <i>- Secondary Education</i></p>
+                  <p class="date">September 2010 - June 2015</p>
+                  <ul>
+                    <li>ICT - A</li>
+              </div> --><!-- end edu -->
+                <br>
+                <hr>
+                <br>
+              <!--put this when you get certificates or something
+                <div id="awards">
+                <p class="title">Awards</p>
+                <p class="title2"><i>Where did you get the award</i></p>
+                <ul>
+                  <li>award name</li>
+                </ul>-->
+              
+              
+        </div> <!-- end main -->
+    </wrapper>
+    
 </body>
 </html>

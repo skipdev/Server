@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Skranji" rel="stylesheet">
+  <title>Solent Pizzas</title>
+</head>
+
+<body>
+<header>
+  <div class='box'>
+    <p>£0.00 <i class="fas fa-shopping-basket"></i></p>
+  </div> <!-- end box -->
+</header> <!-- end header -->
+
+
+<div id='image'>
+  <!-- image that changes on mouse rollover -->
+  <script>var a = 1;</script>
+  <img
+  	id="image1" 
+  	src="img/pizza_logo.jpg" 
+  	height="50" width="50"
+  	onmouseover=
+  		"document.getElementById('image1').src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlbda_h8rz-_PKMd7Q7di9UcBU4w8Yr_KEFzTDb3c2yk5i0e9hXw'" 
+  	onmouseout=
+  		"if(a == 1) {
+  			document.getElementById('image1').src='img/pizza_logo.jpg'
+  		}"
+  />
+</div> <!-- end image (logo) -->
+
+
+<div id='image2'>
+  <img
+  	id="image3" 
+  	src="https://image.freepik.com/free-icon/arrow-down-angle_318-52905.jpg" 
+  	onclick="hideMenu()"
+  />
+</div> <!-- end image 2 (arrow down) -->
+
+
+<sidebar id="nav">
+  <nav class="nav-bar">
+    <ul>
+      <li class="active">HOME</li>
+      <hr>
+      <li><a href="contact.html">CONTACT</a></li>
+      <hr>
+      <li><a href="order.html">ORDER</a></li>
+    </ul>
+  </nav> <!-- end navbar -->
+</sidebar> <!-- end sidebar -->
+
+
+<div id='banner'>
+  <section id="carousel">
+    
+    <!-- carousel slides -->
+    <div class="slide transition">
+      <img src="http://i.dailymail.co.uk/i/pix/2018/02/02/18/48D3379500000578-5345305-image-a-16_1517595669475.jpg" style="width: 100%; height: 77vh;">
+    </div>
+    <div class="slide transition">
+      <img src="http://www.famouspizzaexpress.com/images/pizza35.jpg" style="width: 100%; height: 77vh;">
+    </div>
+    <div class="slide transition">
+      <img src="https://api.pizzahut.io/v1/content/images/promo/any-20.af5ddef8239bb05c32e6ba8235164122.1.jpg" style="width: 100%; height: 77vh;">
+    </div>
+    
+    <!-- calls the function to start carousel -->
+    <script>
+    var slideIndex = 1;
+    slideJS(slideIndex);
+    </script>
+    
+  </section> <!-- end carousel section -->
+</div> <!-- end banner div -->
+
+
+<div id='opening'>
+    <p>Welcome to the official Solent Pizza website.</p>
+</div> <!-- end opening div -->
+
+
+<main>
+  <p>Tel: 01843 964235</p>
+  <p>Email: solent@pizzas.co.uk</p>
+</main>
+
+
+<!-- displays time and date in the footer -->
+<section onload="time()" id="footer">
+    <footer>
+        <p id="time"> DD/MM/YYYY, 00:00:00</p>
+    </footer>
+</section> <!-- end footer section -->
+
+
+</body>
+</html>
