@@ -20,10 +20,10 @@ i {
     margin-left: 10%
 }
 
-#top p {
-    font-size: 14px;
-    text-align: right;
-}
+    #top p {
+        font-size: 14px;
+        text-align: right;
+    }
 
 /* Sidebar */
 wrapper {
@@ -45,71 +45,71 @@ wrapper {
     left: 0;
 }
 
-.sidebar * {
-    min-height: 15%;
-}
+    .sidebar * {
+        min-height: 15%;
+    }
 
-.sidebar #profile_img {
-    order: 1;
-    width: 70%;
-    border-radius: 100%;
-}
+    .sidebar #profile_img {
+        order: 1;
+        width: 70%;
+        border-radius: 100%;
+    }
 
-.sidebar p {
-    order: 2;
-    min-height: 5%;
-    font-size: 38px;
-    text-align: center;
-    color: white;
-}
+    .sidebar p {
+        order: 2;
+        min-height: 5%;
+        font-size: 38px;
+        text-align: center;
+        color: white;
+    }
 
-.sidebar .menu {
-    order: 3;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 60%;
-    justify-content: space-between;
-}
+    .sidebar .menu {
+        order: 3;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 60%;
+        justify-content: space-between;
+    }
 
-.menu img {
-    width: 70%;
-    margin-top: -17%;
-    color: white;
-    transform: rotate(30deg);
+        .menu img {
+            width: 70%;
+            margin-top: -17%;
+            color: white;
+            transform: rotate(30deg);
 
-}
+        }
+    
+    .sidebar a {
+        font-size: 15px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+    }
+    
+        .sidebar a:hover {
+            color: lightgrey;
+        }
+        
+    .sidebar ul {
+        order: 4;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 70%;
+        padding-left: 0;
+        margin-top: 15%;
+    }
+    
+        .sidebar ul li {
+            list-style-type: none;
+            margin: 5%
+        }
 
-.sidebar a {
-    font-size: 15px;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-}
-
-.sidebar a:hover {
-    color: lightgrey;
-}
-
-.sidebar ul {
-    order: 4;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 70%;
-    padding-left: 0;
-    margin-top: 15%;
-}
-
-.sidebar ul li {
-    list-style-type: none;
-    margin: 5%
-}
-
-.sidebar hr {
-    align-self: center;
-}
+    .sidebar hr {
+        align-self: center;
+    }
 
 .main {
     font-size: 18px;
