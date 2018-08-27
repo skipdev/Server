@@ -26,23 +26,14 @@ i {
 }
 
 /* Sidebar */
-wrapper {
-    display: flex;
-}
 
 .sidebar {
-    background-color: #38cdff;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    order: 1;
-    height: 101vh;
-    width: 45vw;
+    background-color: #EE55B0;
+    height: 100%;
+    width: 23%;
     top: 0;
     left: 0;
+    position: fixed;
 }
 
 .sidebar * {
@@ -113,7 +104,6 @@ wrapper {
 
 .main {
     font-size: 18px;
-    order: 2;
     margin-top: -35px;
     margin-left: 25%;
     margin-right: 2%;
@@ -129,12 +119,118 @@ wrapper {
     padding-top: 5%;
 }
 
+#skills ul {
+    width: 40%;
+}
+
+    #first_ul {
+        float: left;
+    }
+    
+    #second_ul {
+        float: right;
+        padding-bottom: -5px;
+    } 
+    
+        #first_ul li, #second_ul li {
+            padding: 5px;
+        }
+
+.title2 {
+    font-weight: bold;
+    font-size: 20px;
+}
+    
+.date {
+    color: #4f4f4f;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: -10px;
+}
+
+#click_here {
+   margin-top: 10px;
+   margin-bottom: 50px;
+}
+    
+    #click_here p {
+        margin: 2px;
+    }
+    
+    #click_here a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+#skill_list {
+    margin-bottom: 215px;
+}
+
+/* Burger Menu */
+
+@media only screen and (max-width: 750px) {
+.container {
+    display: inline-block;
+    cursor: pointer;
+    background-color: #EE55B0;
+    border-radius: 100px;
+    margin-left: -2%;
+    padding: 5px;
+    top: 0;
+    position: fixed;
+}
+
+.bar1, .bar3 {
+    width: 35px;
+    height: 3px;
+    border-radius: 100px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-6px, 6px);
+    }
+    
+    .change .bar3 {
+        transform: rotate(45deg) translate(-5px, -8px);
+    }
+
+.bar2 {
+    width: 25px;
+    height: 3px;
+    border-radius: 100px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+    .change .bar2 {
+        opacity: 0;
+        
+    }
+    
+.sidebar{
+    margin-left: -40%;
+    width: 40%;
+	transition: .5s all;
+	height: 100%;
+}
+
+    .sidebar ul {
+            margin-left: 2%;
+    }
+    
+    .sidebar a {
+        padding: 2px;
+    }
+
+
 .main {
     font-size: 18px;
     margin-top: -8%;
     margin-left: 5%;
     width: 88%;
-}
-
-
 }
