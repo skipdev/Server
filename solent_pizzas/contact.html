@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/contact.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Skranji" rel="stylesheet">
+  <title>Solent Pizzas</title>
+</head>
+
+<body>
+<header>
+  <div class='box'>
+    <p>£0.00 <i class="fas fa-shopping-basket"></i></p>
+  </div> <!-- end box -->
+</header> <!-- end header -->
+
+
+<div id='image'>
+  <!-- image that changes on mouse rollover -->
+  <script>var a = 1;</script>
+  <img
+  	id="image1" 
+  	src="img/pizza_logo.jpg" 
+  	height="50" width="50"
+  	onmouseover=
+  		"document.getElementById('image1').src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlbda_h8rz-_PKMd7Q7di9UcBU4w8Yr_KEFzTDb3c2yk5i0e9hXw'" 
+  	onmouseout=
+  		"if(a == 1) {
+  			document.getElementById('image1').src='img/pizza_logo.jpg'
+  		}"
+  />
+</div> <!-- end image (logo) -->
+
+
+<div id='image2'>
+  <img
+  	id="image3" 
+  	src="https://image.freepik.com/free-icon/arrow-down-angle_318-52905.jpg" 
+  	onclick="hideMenu()"
+  />
+</div> <!-- end image 2 (arrow down) -->
+
+
+<sidebar id="nav">
+  <nav class="nav-bar">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <hr>
+      <li class="active">CONTACT</li>
+      <hr>
+      <li><a href="order.html">ORDER</a></li>
+    </ul>
+  </nav> <!-- end nav -->
+</sidebar> <!-- end sidebar -->
+
+
+<main>
+  <!-- google maps embed -->
+  <iframe
+    width="600"
+    height="450"
+    frameborder="0" style="border:0"
+    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBOfijTsmMfsYhAsxreGlDdq-U8FWTVZgw&q=Solent's+Pizzas" allowfullscreen>
+  </iframe>
+</main>
+
+
+<div id="contact-form">
+  <form name="contact">
+    <label for="name">First Name</label> <span class='tick' id='name_tick'>✓</span> <span class='cross' id='name_cross'>✗</span>
+    <input type="text" id="name" name="name" onblur="blurName()" placeholder="First Name...">
+    <p></p>
+    <br>
+    <label for="surname">Last Name</label> <span class='tick' id='surname_tick'>✓</span> <span class='cross' id='surname_cross'>✗</span>
+    <input type="text" id="surname" name="surname" onblur="blurSurname()" placeholder="Last Name...">
+    <br>
+    <br>
+    <p></p>
+    <label for="email">Email Address</label> <span class='tick' id='email_tick'>✓</span> <span class='cross' id='email_cross'>✗</span>
+    <input type="text" id="email" name="email" onblur="blurEmail()" placeholder="Email...">
+    <p></p>
+    <br>
+    <label for="phone">Phone Number</label> <span class='tick' id='phone_tick'>✓</span> 
+    <input type="text" id="phone" name="phone" onblur="blurPhone()" placeholder="Phone... (optional)">
+    <br>
+    <br>
+    <br>
+    <label for="subject">Message</label> <span class='tick' id='message_tick'>✓</span> <span class='cross' id='message_cross'>✗</span>
+    <textarea id="message" name="subject" onblur="blurMessage()" placeholder="Write something..."></textarea>
+    <p></p>
+    <input id="send" name="send" type="submit" onclick="return validate()" value="Submit">
+  </form>
+</div> <!-- end contact form -->
+
+
+<!-- displays time and date in the footer -->
+<section onload="time()" id="footer">
+    <footer>
+        <p id="time"> DD/MM/YYYY, 00:00:00</p>
+    </footer>
+</section> <!-- end footer section -->
+
+
+</body>
+</html>

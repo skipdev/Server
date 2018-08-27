@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/order.css">
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/order.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Skranji" rel="stylesheet">
+  <title>Solent Pizzas</title>
+</head>
+
+<body>
+<header>
+  <div class='box'>
+    <p>£0.00 <i class="fas fa-shopping-basket"></i></p>
+  </div> <!-- end box -->
+</header> <!-- end header -->
+
+
+<div id='image'>
+  <!-- image that changes on mouse rollover -->
+  <script>var a = 1;</script>
+  <img
+  	id="image1" 
+  	src="img/pizza_logo.jpg" 
+  	height="50" width="50"
+  	onmouseover=
+  		"document.getElementById('image1').src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlbda_h8rz-_PKMd7Q7di9UcBU4w8Yr_KEFzTDb3c2yk5i0e9hXw'" 
+  	onmouseout=
+  		"if(a == 1) {
+  			document.getElementById('image1').src='img/pizza_logo.jpg'
+  		}"
+  />
+</div> <!-- end image (logo) -->
+
+
+<div id='image2'>
+  <img
+  	id="image3" 
+  	src="https://image.freepik.com/free-icon/arrow-down-angle_318-52905.jpg" 
+  	onclick="hideMenu()"
+  />
+</div> <!-- end image 2 (arrow down) -->
+
+
+<sidebar id="nav">
+  <nav class="nav-bar">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <hr>
+      <li><a href="contact.html">CONTACT</a></li>
+      <hr>
+      <li class="active">ORDER</li>
+    </ul>
+  </nav> <!-- end nav -->
+</sidebar> <!-- end sidebar -->
+
+
+<div id="order-form">
+<head>
+	<title>Order</title>
+	<script type='text/javascript' src='js/order.js'></script>
+</head>
+
+<form>
+  <fieldset> <!-- pizza bases -->
+    <legend>Base</legend>
+    <input type = "radio"
+      id = "small_base"
+      value = "5" 
+      name = "rad"
+      onclick="order() & add_total()"/>
+    <label for="small_base">Small</label>
+    
+    <input type = "radio"
+      id = "med_base"
+      value = "7.50" 
+      name = "rad"
+      onclick="order() & add_total()"/>
+    <label for="med_base">Medium</label>
+    
+    <input type = "radio"
+      id = "large_base"
+      value = "10" 
+      name = "rad"
+      onclick="order() & add_total()"/>
+    <label for="large_base">Large</label>
+    
+    <input type = "radio"
+      id = "x_large_base"
+      value = "12.50" 
+      name = "rad"
+      onclick="order() & add_total()"/>
+    <label for="x_large_base">Extra Large</label>
+    </fieldset> <!-- end base fieldset -->
+    
+    
+    <fieldset> <!-- toppings -->
+    <legend>Toppings</legend>
+    <input type = "checkbox"
+      id = "cheese"
+      value = ".20"
+      name = "Cheese"
+      onclick="order() & add_total()"/>
+    <label for="cheese">Cheese</label>
+    
+    <input type = "checkbox"
+      id = "ham"
+      value = ".50"
+      name = "Ham"
+      onclick="order() & add_total()"/>
+    <label for="ham">Ham</label>
+    
+    <input type = "checkbox"
+      id = "mushrooms"
+      value = ".40"
+      name = "Mushrooms"
+      onclick="order() & add_total()"/>
+    <label for="mushrooms">Mushrooms</label>
+    
+    <input type = "checkbox"
+      id = "anchovies"
+      value = ".60"
+      name = "Anchovies"
+      onclick="order() & add_total()"/>
+    <label for="anchovies">Anchovies</label>
+  </fieldset> <!-- end topping fieldset -->
+
+
+  <fieldset> <!-- extra food -->
+    <legend>Extras</legend>
+    <input type = "checkbox"
+      id = "chips"
+      value = "1.50"
+      name = "chips"
+      onclick="order() & add_total()"/>
+    <label for="chips">Chips</label>
+    
+    <input type = "checkbox"
+      id = "garlic_bread"
+      value = "2.00"
+      name = "garlic_bread"
+      onclick="order() & add_total()"/>
+    <label for="garlic_bread">Garlic Bread</label>
+  </fieldset> <!-- end extras fieldset -->
+  
+  <br>
+  
+  <!-- reset button -->
+  <button onclick="reset()">
+      RESET
+  </button>
+  
+  <br>
+  <br>
+  
+  <fieldset> <!-- delivery -->
+    <legend>Delivery Address</legend>
+    <label for="name">Name</label>
+    <input type = "text" id = "name"/>
+    <br>
+    <br>
+    <label for="phone">Phone</label>
+    <input type = "text" id = "phone"/>
+    <br>
+    <br>
+    <br>
+    <label for="address_1">Address Line 1</label>
+    <input type = "text" id = "address_1"/>
+    <br>
+    <label for="postcode">Postcode</label>
+    <input type = "text" id = "postcode"/>
+  </fieldset> <!-- end delivery fieldset -->
+
+  <br>
+  
+  <!-- submit button -->
+  <button type="button" onclick="check()">
+      Submit Order
+  </button>
+</form>
+</div> <!-- end order-form div -->
+
+
+<div id="side"> 
+  <!-- displays order -->
+  <h2>Your order:</h2>
+  <div id = "output"></div>
+  <!-- displays total-->
+  <h3>Total:</h3>
+  <div id="total" value=0></div>
+  <!-- displays error -->
+  <p id="error" style="display:none">Error: Must have at least 1 (one) base and topping selection.</p>
+</div> <!-- end side -->
+
+
+<!-- displays time and date in the footer -->
+<section onload="time()" id="footer">
+    <footer>
+        <p id="time"> DD/MM/YYYY, 00:00:00</p>
+    </footer>
+</section> <!-- end footer section -->
+
+
+</body>
+</html>

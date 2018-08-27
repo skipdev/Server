@@ -1,0 +1,118 @@
+* {
+    font-family: 'Skranji', 
+    sans-serif;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-image: url(http://backgroundcheckall.com/wp-content/uploads/2017/12/red-white-background-hd.jpg);
+}
+
+
+header {
+    grid-row: 1;
+    grid-column: 5;
+    background: transparent;
+    text-align: right!important;
+}
+
+    header i {
+        color: black;
+    }
+    
+    header a {
+        display: block;
+        z-index: -1;
+    }
+
+/* little cart icon in the top right - (decoration) */
+.box{
+    grid-row: 1;
+    grid-column: 4;
+    background: white;
+    max-width: 100%;
+    height: 80%;
+    float: right;
+    padding: 10%;
+    top: -5;
+    margin-top: -10%;
+    border-radius: 5px;
+}
+
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 10%;
+text-align: center;
+border-radius: 0px 0px 5px 5px;
+background: rgba(0, 0, 0, .9);
+
+}
+
+    nav ul li {
+        color: white;
+        display: inline-block;
+        list-style-type: none;
+        padding: 10%;
+    }
+    
+    nav ul .active {
+        background: url(https://image.flaticon.com/icons/svg/35/35416.svg);
+        background-size: 100% 100%;
+        color: darkgrey;
+    }
+    
+    nav a:hover {
+        color: grey;
+    }
+    
+    nav a:link, a:visited {
+        color: white;
+        text-decoration: none!important;
+    }
+
+/* circular logo above menu */    
+#image {
+    background-color: white;
+    border-radius: 100%;
+}
+
+    #image img {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+    }
+    
+    /* down arrow - (click to expand menu) */
+    #image2 img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px 5px 0px 0px;
+    }
+
+#footer {
+    background-image: url(https://img00.deviantart.net/dd7c/i/2015/010/0/3/chalkboard_texture_mc2015_by_mattiamc-d8dbnac.jpg);
+}
+
+#time {
+    text-align: right;
+}
+
+/* if screen size > 700px, set font size of nav bar to 25px and reduce padding by 3px */
+@media only screen and (min-width: 700px) {
+    nav ul li {
+        font-size: 25px;
+        padding: 10%;
+    }
+}

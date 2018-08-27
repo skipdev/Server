@@ -1,0 +1,234 @@
+body {
+    font-family: "Raleway", sans-serif;
+    margin-top: -5px;
+}
+
+hr {
+    width: 70%;
+    border-radius: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+i {
+    font-size: 15px;
+    color: #3a3a3a;
+}
+
+#top {
+    float: right;
+    margin-left: 10%
+}
+
+    #top p {
+        font-size: 14px;
+        text-align: right;
+    }
+
+/* Sidebar */
+
+.sidebar {
+    background-color: #EE55B0;
+    height: 100%;
+    width: 23%;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+    .sidebar img {
+        width: 50%;
+        border-radius: 100%;
+        margin: 20% 0% 10% 20%;
+        display: block;
+        padding-left: 7%;
+    }
+    
+    .sidebar p {
+        font-size: 17px;
+        margin: 0% 5% 0% 5%;
+        text-align: center;
+        color: white;
+    }
+    
+    .sidebar a {
+        font-size: 15px;
+        margin: 10% 10% 10% 10%;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        display: block;
+    }
+    
+        .sidebar a:hover {
+            color: lightgrey;
+        }
+        
+    .sidebar ul {
+        padding-top: 5%;
+        margin-left: 5%;
+        margin-right: 10%;
+    }
+    
+        .sidebar ul li {
+            display: inline-block;
+            list-style-type: none;
+            padding: 5%;
+        }
+
+.main {
+    font-size: 18px;
+    margin-top: -35px;
+    margin-left: 25%;
+    margin-right: 2%;
+    padding: 15px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#about {
+    padding-top: 5%;
+}
+
+#skills ul {
+    width: 40%;
+}
+
+    #first_ul {
+        float: left;
+    }
+    
+    #second_ul {
+        float: right;
+        padding-bottom: -5px;
+    } 
+    
+        #first_ul li, #second_ul li {
+            padding: 5px;
+        }
+
+.title2 {
+    font-weight: bold;
+    font-size: 20px;
+}
+    
+.date {
+    color: #4f4f4f;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: -10px;
+}
+
+#click_here {
+   margin-top: 10px;
+   margin-bottom: 50px;
+}
+    
+    #click_here p {
+        margin: 2px;
+    }
+    
+    #click_here a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+#skill_list {
+    margin-bottom: 215px;
+}
+
+/* Burger Menu */
+
+@media only screen and (max-width: 750px) {
+.container {
+    display: inline-block;
+    cursor: pointer;
+    background-color: #EE55B0;
+    border-radius: 100px;
+    margin-left: -2%;
+    padding: 5px;
+    top: 0;
+    position: fixed;
+}
+
+.bar1, .bar3 {
+    width: 35px;
+    height: 3px;
+    border-radius: 100px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-6px, 6px);
+    }
+    
+    .change .bar3 {
+        transform: rotate(45deg) translate(-5px, -8px);
+    }
+
+.bar2 {
+    width: 25px;
+    height: 3px;
+    border-radius: 100px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+    .change .bar2 {
+        opacity: 0;
+        
+    }
+    
+.sidebar{
+    margin-left: -40%;
+    width: 40%;
+	transition: .5s all;
+	height: 100%;
+}
+
+    .sidebar ul {
+            margin-left: 2%;
+    }
+    
+    .sidebar a {
+        padding: 2px;
+    }
+
+
+.main {
+    font-size: 18px;
+    margin-top: -8%;
+    margin-left: 5%;
+    width: 88%;
+}
+
+#about {
+    margin-top: 180px;
+}
+
+#first_ul, #second_ul {
+    float: left;
+} 
+
+#skills ul {
+    width: 70%;
+}
+
+#work_exp ul {
+    margin-right: 10px;
+    margin-left: -20px;
+}
+
+#more {
+    text-align: center;
+}
+        
+        
+}

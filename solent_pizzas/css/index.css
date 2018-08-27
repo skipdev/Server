@@ -1,0 +1,93 @@
+body {
+    grid-template-columns: 10vw 20vw 20vw 22vw 20vw 8vw;
+    grid-template-rows: 5vh 15vh 5vh 15vh 17vh 20vh 17vh 3vh;
+}
+
+sidebar {
+    grid-row: 4;
+    grid-column: 2;
+}
+
+/* placement of the carousel (#banner is the div, #carousel is the section) */
+#banner {
+    grid-row: 1 / span 6;
+    grid-column: 1 / span 6;
+}
+
+#carousel {
+  background-color: white;
+  position: relative;
+  z-index: -1;
+}
+    /* fade animation */
+    .transition {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 5s;
+      animation-name: fade;
+      animation-duration: 5s;
+    }
+    
+        @keyframes fade {
+          0%, 100% { 
+              opacity: 0 
+          }
+          20%, 80% { 
+              opacity: 1 
+          }
+        }
+
+#image {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#image2 {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+/* The paragraph of text to welcome the user */
+#opening {
+   grid-row: 3;
+   grid-column: 3 / span 3;
+   font-weight: bolder;
+   font-size: 60px;
+   color: white;
+   text-align: center;
+   margin-left: 5vh;
+   vertical-align: bottom;
+   border-radius: 5px 0px 0px 5px;
+   -webkit-text-stroke: 1px black;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+main {
+    grid-row: 7;
+    grid-column: 1 / span 6;
+    background-image: url(https://img00.deviantart.net/dd7c/i/2015/010/0/3/chalkboard_texture_mc2015_by_mattiamc-d8dbnac.jpg);
+}
+
+#footer {
+    grid-row: 8 / span 2;
+    grid-column: 1 / span 6;
+}
+
+/* if screen size < 700px, set font size to 35px */
+@media only screen and (max-width: 700px) {
+    #opening, #text, #text3 {
+        font-size: 35px;
+    }
+}
+
+/* if screen size > 700px, set main font size to 35px */
+@media only screen and (min-width: 700px) {
+    main p {
+        font-size: 25px;
+    }
+}
+
