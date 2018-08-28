@@ -1,5 +1,5 @@
 body {
-    font-family: "Raleway", sans-serif;
+    font-family: 'Muli', sans-serif;
     margin-top: -5px;
 }
 
@@ -112,7 +112,7 @@ wrapper {
     }
 
 .main {
-    font-size: 18px;
+    font-size: 20px;
     order: 2;
     margin-right: 2%;
     padding: 15px;
