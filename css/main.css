@@ -33,7 +33,6 @@ wrapper {
 .sidebar {
     background-color: #38cdff;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -41,8 +40,7 @@ wrapper {
     order: 1;
     height: 101vh;
     width: 45vw;
-    top: 0;
-    left: 0;
+    transform: translateX(-3%);
 }
 
     .sidebar * {
@@ -51,7 +49,7 @@ wrapper {
 
     .sidebar #profile_img {
         order: 1;
-        width: 70%;
+        width: 60%;
         border-radius: 100%;
     }
 
@@ -74,7 +72,7 @@ wrapper {
 
         .menu img {
             width: 70%;
-            margin-top: -17%;
+            margin-top: -15%;
             color: white;
             transform: rotate(30deg);
 
