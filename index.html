@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/scss" href="css/particles.scss">
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/particles.babel"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" media="screen" href="css/style.css">
     <title>StephyX Web</title>
 </head>
 
@@ -15,6 +19,7 @@
 
     <wrapper>
         <div class="sidebar">
+        <div id="particles-js"></div>
           <img id="profile_img" src="https://avatars0.githubusercontent.com/u/32325240?s=460&v=4">
           <br>
           <p><b>Stephy</b></p>
@@ -43,16 +48,42 @@
                 stephyx.web@gmail.com
               </p>
             </div> <!-- end top -->
+            <div id="about">
+                <p class="title">Front-End Developer</p>
+                <p>An ambitious Front-End Web Developer bringing a broad skill range in both website design and development. </p>
+            </div> <!-- end about -->
+            <hr>
+            <!-- particles.js container -->
+            <!--<div id="particles-js"></div>-->
+
+            <!-- scripts -->
+            <script src="../particles.js"></script>
+            <script src="js/app.js"></script>
+
+            <script>
+               var count_particles, stats, update;
+               stats = new Stats;
+               stats.setMode(0);
+               stats.domElement.style.position = 'absolute';
+               stats.domElement.style.left = '0px';
+               stats.domElement.style.top = '0px';
+               document.body.appendChild(stats.domElement);
+               count_particles = document.querySelector('.js-count-particles');
+               update = function() {
+                  stats.begin();
+                  stats.end();
+                  if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+                     count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+                  }
+                  requestAnimationFrame(update);
+               };
+               requestAnimationFrame(update);
+            </script>
           <br>
-              <div id="about">
-                  <p class="title">About me</p>
-                  <p>An ambitious Front-End Web Developer bringing a broad skill range in both website design and development. </p>
-              </div> <!-- end about -->
               <br>
-              <hr>
               <br>
-              
-              
+
+
         </div> <!-- end main -->
     </wrapper>
     
