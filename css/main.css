@@ -17,7 +17,8 @@ i {
 
 #top {
     float: right;
-    margin-left: 10%
+    margin-left: 10%;
+    left: 0;
 }
 
     #top p {
@@ -47,6 +48,14 @@ wrapper {
 
     .sidebar * {
         min-height: 15%;
+    }
+
+    .sidebar #menu {
+        width: 12%;
+        order: 0;
+        margin-left: 3vw;
+        align-self: flex-start;
+        padding-bottom: 3%;
     }
 
     .sidebar #profile_img {
@@ -124,13 +133,20 @@ wrapper {
 }
 
 .title {
-    margin-top: 5%;
+    text-align: right;
+    margin-top: 3%;
     font-weight: bold;
     font-size: 40px;
 }
 
 #about {
     padding-top: 5%;
+    text-align: right;
+}
+
+.main hr {
+    text-align: right;
+    margin-left: 40%;
 }
 
 #particles-js {
